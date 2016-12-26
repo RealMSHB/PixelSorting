@@ -1,12 +1,14 @@
 # PixelSorting
 
 Pixel Sort
+
 Sadegh Broomand | 2016 
 
 Use Processing:
 https://processing.org/download/?processing
 
 Put any image in "data" folder.
+
 Put requird information in Code and Run the code.
 
           String name = "image";          // image name
