@@ -4,8 +4,14 @@ Pixel Sort
 
 Sadegh Broomand | 2016 
 
+
+
+
 Use Processing:
 https://processing.org/download/?processing
+
+
+
 
 Put any image in "data" folder.
 
