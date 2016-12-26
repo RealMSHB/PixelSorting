@@ -1,60 +1,61 @@
+/* 
+
+  Pixel Sort
+  Sadegh Broomand | 2016 
+   
+*/
+
+
+
+//========================================================================
 PImage img;
 PImage sorted;
 int count = 0;
-<<<<<<< HEAD
-String name = "image";
 
+String name = "image"; //put of image name here --------------------------
 
+//========================================================================
 void setup() {
-  size(800,400);
 
-  img = loadImage("image2.png");
-=======
-String name = "blood";
-
-
-void setup() {
-  size(500,500);
-
-  img = loadImage("blood.jpg");
->>>>>>> origin/master
+  size(800,400);      //put of image size here ---------------------------
+  img = loadImage("image2.png");     //put of image file name here -------
   sorted = createImage(img.width, img.height, RGB);
   pixelate();
+  
 }
+//========================================================================
 
+//========================================================================
+//Redraw and save image
 void draw() {
+  
   println(frameRate);
   background(0);
-  //image(img, 0, 0);
   image(sorted, 0, 0);
   
 }
+//========================================================================
 
-
+//========================================================================
+//Redraw and save image
 void mousePressed() {
+  
   pixelate();
   redraw();
-<<<<<<< HEAD
-  save(name +"image"+count+".png");
-=======
-  save(name +"image"+count+".jpg");
->>>>>>> origin/master
+  save(name +"image"+count+".png");  // saving image file.
   count++;
+  
 }
+//========================================================================
 
+//========================================================================
 void pixelate() {
+  //Set Original image to a temp image
   sorted = img.get();
   sorted.loadPixels();
-
-  // Selection sort!
-  
-<<<<<<< HEAD
+  // Pixel Sorting
     for (int j = 0; j < sorted.pixels.length; j+=2) {
       for(int i = 0;i < random(1, 10); i++)
-=======
-    for (int j = 0; j < sorted.pixels.length; j+=1) {
-      for(int i = 0;i < random(1, 6); i++)
->>>>>>> origin/master
       {
         if((j-i) >  0)
         {
