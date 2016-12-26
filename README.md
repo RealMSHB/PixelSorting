@@ -10,3 +10,7 @@ put any image in "data" folder
 put requird information in Code and Run the code
 
 Change "firstArg" and "secondArg" to change the pixel sorting
+
+
+          int firstArg = 2;   
+          int secondArg = 10;  
