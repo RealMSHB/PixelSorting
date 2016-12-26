@@ -18,7 +18,7 @@ Put any image in "data" folder.
 Put requird information in Code and Run the code.
 
           String name = "image";          // image name
-          size(800,400);                  //image size
+          size(800,400);                  // image size
           img = loadImage("image2.png");  // image file name
 
 
