@@ -12,6 +12,9 @@ PImage img;
 PImage sorted;
 int count = 0;
 
+int firstArg = 2;    // change this --------------------------------------
+int secondArg = 10;  // change this --------------------------------------
+
 String name = "image"; //put of image name here --------------------------
 
 //========================================================================
@@ -54,8 +57,8 @@ void pixelate() {
   sorted = img.get();
   sorted.loadPixels();
   // Pixel Sorting
-    for (int j = 0; j < sorted.pixels.length; j+=2) {
-      for(int i = 0;i < random(1, 10); i++)
+    for (int j = 0; j < sorted.pixels.length; j+=firstArg) {
+      for(int i = 0;i < random(1, secondArg); i++)
       {
         if((j-i) >  0)
         {
