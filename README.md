@@ -9,6 +9,11 @@ https://processing.org/download/?processing
 put any image in "data" folder
 put requird information in Code and Run the code
 
+          String name = "image";          // image name
+          size(800,400);                  //image size
+          img = loadImage("image2.png");  // image file name
+
+
 Change "firstArg" and "secondArg" to change the pixel sorting
 
 
